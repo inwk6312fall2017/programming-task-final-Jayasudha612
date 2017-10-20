@@ -1,0 +1,12 @@
+with open('book2.txt', 'r') as file :
+  filedata = file.read()
+
+
+filedata = filedata.replace('twenty', 'hello')
+
+with open('file.txt', 'w') as file:
+  file.write(filedata)
+
+
+
+
