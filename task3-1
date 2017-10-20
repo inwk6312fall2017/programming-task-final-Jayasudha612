@@ -1,8 +1,8 @@
-with open('book2.txt', 'r') as file :
+with open('runnin_config.cfg', 'r') as file :
   filedata = file.read()
 
 
-filedata = filedata.replace('twenty', 'hello')
+filedata = filedata.replace('192', '172')
 
 with open('file.txt', 'w') as file:
   file.write(filedata)
