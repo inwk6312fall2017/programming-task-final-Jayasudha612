@@ -14,7 +14,7 @@ for line in f1:
    for word in (w for w in line.split(" ") if len(w) % 2 == 0 and len(w) > len(longest)):
        longest = word
 
-
+print(word)
 
 
 
