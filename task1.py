@@ -11,26 +11,38 @@ for line1 in f1:
    for word1 in (w for w in line1.split(" ") if len(w) % 2 == 0 and len(w) > len(longest1)):
        longest1 = word1
 
-print(word1)
+#print(word1)
 word_list.append(word1)
 #print(word_list)
 
 
 
 
-#for line2 in f2:
+for line2 in f2:
 
-#   longest = ""
-#   for word in (w for w in line.split(" ") if len(w) % 2 == 0 and len(w) > len(longest)):
-#       longest = word
+   longest2 = ""
+   for word2 in (w for w in line2.split(" ") if len(w) % 2 == 0 and len(w) > len(longest2)):
+       longest2 = word2
 
-#print(word)
+#print(word2)
+word_list.append(word2)
+#print(word_list)
 
 
-#for line in f1:
+for line3 in f3:
 
-#   longest = ""
-#   for word in (w for w in line.split(" ") if len(w) % 2 == 0 and len(w) > len(longest)):
-#       longest = word
+   longest3 = ""
+   for word3 in (w for w in line3.split(" ") if len(w) % 2 == 0 and len(w) > len(longest3)):
+       longest3 = word3
 
-#print(word)
+#print(word3)
+word_list.append(word3)
+print(word_list)
+
+#for i in word_list:
+#   a =len(i)
+#   print(max(a))
+
+print(len(word_list))
+
+#a = len(max(word_list, key=len))
